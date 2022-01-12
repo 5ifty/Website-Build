@@ -7,6 +7,13 @@
     url('Consolas.ttf') format('svg'); /* Legacy iOS */
 }
 
+.inputbox {
+    border: none;
+    background-color: black;
+    color: greenyellow;
+    font-family: 'Consolas';
+}
+
 
 .cmdtext {
     text-align: center;

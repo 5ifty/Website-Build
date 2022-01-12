@@ -16,7 +16,7 @@
 
 
 .borders {
-    width: 1800px;
+    width: 1600px;
     height: 500px;
     border: solid white;
     font-size: small;
@@ -31,7 +31,7 @@
 }
 
 .borderheader{
-    width: 1800px;
+    width: 1600px;
     height: 30px;
     border-top-width: 30px;
     border: solid white;
@@ -40,6 +40,7 @@
     background: #FFFFFF;
     font-family: 'Consolas';
     text-align: left;
+    font-size: small;
     
 }
 

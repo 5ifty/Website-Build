@@ -1,0 +1,110 @@
+@font-face{
+    font-family: 'Consolas';
+    src:url("Consolas.ttf") format('embedded-opentype'), /* Internet Explorer */
+    url('Consolas.ttf') format('woff2'), /* Super Modern Browsers */
+    url('Consolas.ttf') format('woff'), /* Pretty Modern Browsers */
+    url('Consolas.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('Consolas.ttf') format('svg'); /* Legacy iOS */
+}
+
+.inputbox {
+    border: none;
+    background-color: black;
+    color: greenyellow;
+    font-family: 'Consolas';
+}
+
+
+.cmdtext {
+    text-align: center;
+    color: white;
+    font-family: 'Consolas';
+}
+
+
+.borders {
+    width: 1600px;
+    height: 500px;
+    border: solid white;
+    font-size: small;
+    color: greenyellow;
+    padding: 20px;
+    font-family: 'Consolas';
+    text-align: left;
+
+    
+    
+    
+}
+
+.borderheader{
+    width: 1600px;
+    height: 30px;
+
+    border: solid white;
+    border-bottom: solid white;
+    color: black;
+    background: #FFFFFF;
+    font-family: 'Consolas';
+    text-align: left;
+    font-size: small;
+    
+}
+
+
+
+.blinking-cursor {
+    font-weight: 100;
+  font-size: 20px;
+-webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color:  greenyellow;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: greenyellow;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color:  greenyellow;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color:  greenyellow;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color:  greenyellow;
+  }
+}
+

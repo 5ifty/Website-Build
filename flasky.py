@@ -14,9 +14,11 @@ def page_not_found(e):
 
 
 class Flasky(FlaskView):
+    def __init__(self):
+        self.version = 'v1.0.0'
+        self.latest_update = '18/01/22'
+
     
-
-
     @route('/')
     def index(self):
 
@@ -24,6 +26,20 @@ class Flasky(FlaskView):
         return render_template('index.html')
 
 
+
+
+    @route('/', methods=['GET', 'POST'])
+    def index_post(self):
+        print('test')
+        cmdinput1 = request.form.get['cmdinput']
+        process_cmdinput = cmdinput1.upper()
+        print(process_cmdinput)
+        if process_cmdinput == '-help':
+            print('Wow it really worked?')
+        else:
+            print("What did you expect?")
+
+        return render_template('index.html')
 
 
 

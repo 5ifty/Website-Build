@@ -5,6 +5,16 @@
     <title>Portfolio</title>
     <meta name = "description" content = "Portfolio Showing my work in HTML, CSS, Js and Python"/>
     <link rel="icon" href="/static/images/favicon.jpg" type="image/jpg">
+    <script>   /* Me being lazy, need to make a seperate JS file for this to clean this up... its 2am tho and im fucking tired */
+        var input = document.getElementById("cmdinput");
+        input.addEventListener("keyup", function(event) {
+             // Number 13 is the "Enter" key on the keyboard
+            if (event.keyCode === 13) {
+                form.submit();
+    
+  }
+}); 
+</script>
 </head>
 <body style="background-color:black;">>
 <style>
@@ -35,9 +45,8 @@ p1 {
 <h class='cmdtext'>Welcome to my portfolio website! </h>
 
 <div  class='borderheader cmdtext'><img src='/static/images/terminal.jpg' alt='Terminal Icon' style="width:35px;height:30px"><p1>C:Users\5ifty\This_Website\Terminal.exe</p1></div>
-<div class='borders cmdtext' style='overflow: scroll; scrollbar-color: grey lightgrey;'>Command Terminal [Version 13.01.22]<br>(c) 5ifty & Affiliates. All rights reserved. Please read licensing agreements.<br>C:\Users\5ifty\This_Website\
-<input class='inputbox' type='text' maxlength='10' placeholder='Hint Type -help' autofocus><span class='blinking-cursor'>|</span></input>  
-    </div>
+<div class='borders cmdtext' style='overflow: scroll; scrollbar-color: grey lightgrey;'>Command Terminal [Version 13.01.22]<br>(c) 5ifty & Affiliates. All rights reserved. Please read licensing agreements.<br>C:\Users\5ifty\This_Website\<form> <input class='inputbox' type='post' name='cmdinput' maxlength='10' placeholder='Hint Type -help' autofocus> </form></input><span class='blinking-cursor'>|</span>
+</div>
 </body>
 
 <body>

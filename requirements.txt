@@ -1,0 +1,7 @@
+**You will need to have python3.6 or above installed to use this properly** 
+
+Repositories:
+
+flask
+Flask_classful
+requests

@@ -22,22 +22,25 @@ class Flasky(FlaskView):
     @route('/')
     def index(self):
 
-        print('test')
         return render_template('index.html')
 
 
 
 
-    @route('/', methods=['GET', 'POST'])
+    @route('/', methods=['POST'])
     def index_post(self):
         print('test')
-        cmdinput1 = request.form.get['cmdinput']
-        process_cmdinput = cmdinput1.upper()
-        print(process_cmdinput)
-        if process_cmdinput == '-help':
-            print('Wow it really worked?')
+
+        if request.method == 'POST':
+            cmdinput1 = request.form['cmdinput']
+            print(cmdinput1)
+            if cmdinput1 == '-help':
+                print('Wow it really worked?')
+            else:
+                print("What did you expect?")
+
         else:
-            print("What did you expect?")
+            print("Ah")
 
         return render_template('index.html')
 

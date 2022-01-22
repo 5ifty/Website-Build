@@ -18,7 +18,7 @@ class Flasky(FlaskView):
         self.version = 'v1.0.0'
         self.latest_update = '18/01/22'
 
-    
+
     @route('/')
     def index(self):
 
@@ -36,6 +36,7 @@ class Flasky(FlaskView):
             print(cmdinput1)
             if cmdinput1 == '-help':
                 print('Wow it really worked?')
+                return render_template('upindex.html')
             else:
                 print("What did you expect?")
 

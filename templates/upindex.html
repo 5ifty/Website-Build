@@ -6,10 +6,14 @@
     <meta name = "description" content = "Portfolio Showing my work in HTML, CSS, Js and Python"/>
     <link rel="icon" href="/static/images/favicon.jpg" type="image/jpg">
     <script type="text/javascript" src="/static/styles/enter.js"> </script>
+    <script type="text/text/javascript" src='/static/styles/onclick.js'></script>
 </head>
 <body style="background-color:black;">>
 <style>
 
+.hidden {
+display : none;
+}
 
 p1 {
       text-align: top;
@@ -38,15 +42,24 @@ p1 {
 <div  class='borderheader cmdtext'><img src='/static/images/terminal.jpg' alt='Terminal Icon' style="width:35px;height:30px"><p1>C:Users\5ifty\This_Website\Terminal.exe</p1></div>
 <div class='borders cmdtext' style='overflow: scroll; scrollbar-color: grey lightgrey;'>Command Terminal [Version 13.01.22]<br>(c) 5ifty & Affiliates. All rights reserved. Please read licensing agreements.<br>
 <form id='cmdform1' method='POST'>
-C:\Users\5ifty\This_Website\ &#160;
-
-<div class='blinking-cursor'>|</div>
-<p><a href="https://www.github.com/5ifty">-Github</p>
-<p><a href="mailto:5iftyenquiries@gmail.com">-Email</p>
-<p><a href="https://stackoverflow.com/users/15440841/harry">-StackOverflow</p>
-<p><a href="/business">-Business Website</p>
+C:\Users\5ifty\This_Website\ &#160;<div class='blinking-cursor'>|</div>
 
 
+<div class='easydiv' id='newpost'>
+  <p class='cmdtext'>-About me</p>
+  <p1 class='hidden cmdtext'>I'm a 19 year old Freelance Dev</p1>
+
+
+
+
+<p><a href="https://www.github.com/5ifty" target="_blank">-Github</p>
+<p><a href="mailto:5iftyenquiries@gmail.com" target="_blank">-Email</p>
+<p><a href="https://stackoverflow.com/users/15440841/harry" target="_blank">-StackOverflow</p>
+<p><a href="/business" target='_blank'>-Business Website</p>
+
+
+</div>
+</div>
 </div>
 </div>
 </body>

@@ -1,28 +1,34 @@
-from flask import Flask, render_template, Markup, request, url_for, redirect
+from flask import Flask, render_template, Markup, request, url_for, redirect, render_template_string
 import sys
 from flask_classful import FlaskView, route
 from flask.logging import default_handler
 import os
+import pretty_errors
 
 
 sys.path.append('/')
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 
+
 def page_not_found(e):
-  return render_template('404.html'), 404     # error handler
+    return render_template('404.html'), 404     # error handler
+
+
 
 
 class Flasky(FlaskView):
     def __init__(self):
-        self.version = 'v1.0.0'
-        self.latest_update = '18/01/22'
+        self.version = 'v1.0.1'
+        self.latest_update = '02/02/22'
+
+
 
 
     @route('/')
     def index(self):
-
-        return render_template('index.html')
+        varaboutsite = f'Version {self.version} Latest Update {self.latest_update}'
+        return render_template('index.html', aboutsite=varaboutsite)
 
 
 
@@ -30,20 +36,17 @@ class Flasky(FlaskView):
     @route('/', methods=['POST'])
     def index_post(self):
         print('test')
-
         if request.method == 'POST':
             cmdinput1 = request.form['cmdinput']
             print(cmdinput1)
             if cmdinput1 == '-help':
                 print('Wow it really worked?')
-                return render_template('upindex.html')
+                return render_template('upindex.html',)
             else:
                 print("What did you expect?")
+                return render_template('index.html',)
 
-        else:
-            print("Ah")
-
-        return render_template('index.html')
+            return render_template('index.html',)
 
 
 

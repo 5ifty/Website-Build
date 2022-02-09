@@ -17,11 +17,20 @@
 
 
 .cmdtext {
-    text-align: center;
+    text-align: left;
     color: white;
     font-family: 'Consolas';
 }
 
+.invisiblebutton{
+
+  background: transparent;
+  border: none !important;
+  font-family: 'Consolas';
+  text-align: left;
+  color: greenyellow;
+
+}
 
 .borders {
     width: 1600px;

@@ -4,5 +4,4 @@ Repositories:
 
 flask
 Flask_classful
-requests
 pretty_errors

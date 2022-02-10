@@ -22,6 +22,8 @@
     font-family: 'Consolas';
 }
 
+
+
 .invisiblebutton{
 
   background: transparent;
@@ -47,6 +49,12 @@
 
 }
 
+.terminaltext {
+  text-align: left;
+  font-family: 'Consolas';
+  color: greenyellow;
+
+}
 
 .easydiv {
     font-size: small;

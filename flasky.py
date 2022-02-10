@@ -4,6 +4,8 @@ from flask_classful import FlaskView, route
 from flask.logging import default_handler
 import os
 import pretty_errors
+from werkzeug.exceptions import HTTPException, NotFound
+
 
 
 sys.path.append('/')
@@ -38,15 +40,14 @@ class Flasky(FlaskView):
         print('test')
         if request.method == 'POST':
             cmdinput1 = request.form['cmdinput']
-            print(cmdinput1)
             if cmdinput1 == '-help':
                 print('Wow it really worked?')
-                return render_template('upindex.html',)
-            else:
-                print("What did you expect?")
-                return render_template('index.html',)
-
+            return render_template('upindex.html',)
+        else:
+            print("What did you expect?")
             return render_template('index.html',)
+
+        return render_template('index.html',)
 
 
 

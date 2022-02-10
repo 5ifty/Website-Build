@@ -6,13 +6,15 @@
     <meta name = "description" content = "Portfolio Showing my work in HTML, CSS, Js and Python"/>
     <link rel="icon" href="/static/images/favicon.jpg" type="image/jpg">
     <script type="text/javascript" src="/static/styles/enter.js"> </script>
-    <script type="text/text/javascript" src='/static/styles/onclick.js'></script>
+    <script type="text/javascript" src='/static/styles/onclick.js'></script>
 </head>
 <body style="background-color:black;">>
+
+
 <style>
 
 .hidden {
-display : none;
+visibility: hidden;
 }
 
 p1 {
@@ -37,17 +39,21 @@ p1 {
 
 
   </style>
-<h class='cmdtext'>Welcome to my portfolio website! </h>
+<h class='cmdtext'>Welcome to my portfolio website!</h>
+<input type='hidden' class='inputbox' method='POST' name='cmdinput' maxlength='10' autofocus>   <!-- Flask likes to throw errors when it doesnt actually need to, this stops a stupid 404 error -->
 <div>
 <div  class='borderheader cmdtext'><img src='/static/images/terminal.jpg' alt='Terminal Icon' style="width:35px;height:30px"><p1>C:Users\5ifty\This_Website\Terminal.exe</p1></div>
 <div class='borders cmdtext' style='overflow: scroll; scrollbar-color: grey lightgrey;'>Command Terminal [Version 13.01.22]<br>(c) 5ifty & Affiliates. All rights reserved. Please read licensing agreements.<br>
-<form id='cmdform1' method='POST'>
 C:\Users\5ifty\This_Website\ &#160;<div class='blinking-cursor'>|</div>
 
 
-<div class='easydiv' id='newpost'>
-  <button class='invisiblebutton'>-About Me</button>
-  <p1 class='hidden'>I'm a 19 year old Freelance Dev</p1>
+
+  <div class='easydiv' id='newpost'>
+
+  <button value='IC3' onclick="unhide()" class='invisiblebutton'>-About Me</button>
+  <div class="hidden">
+    <p1 class="terminaltext">I'm a 19 year old Freelance Dev</p1>
+  </div>
 
 
 
@@ -57,7 +63,7 @@ C:\Users\5ifty\This_Website\ &#160;<div class='blinking-cursor'>|</div>
 <p><a href="https://stackoverflow.com/users/15440841/harry" target="_blank">-StackOverflow</p>
 <p><a href="/business" target='_blank'>-Business Website</p>
 
-
+</div>
 </div>
 </div>
 </div>

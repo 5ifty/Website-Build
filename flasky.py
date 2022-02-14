@@ -50,6 +50,11 @@ class Flasky(FlaskView):
         return render_template('index.html',)
 
 
+    @route('/business')
+    def business_page(self):
+        return('This page is under construction at the moment, for more info please email me')
+
+
 
 Flasky.register(app,route_base = '/')
 app.register_error_handler(404, page_not_found)

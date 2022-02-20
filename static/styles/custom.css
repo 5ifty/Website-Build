@@ -8,7 +8,7 @@
 }
 
 
-.typewriter {
+.typewriter::after {
     font-family: Courier, monospace;
 	display: inline-block;
 }

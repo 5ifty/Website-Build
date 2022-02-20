@@ -1,11 +1,14 @@
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet"  type="text/css" href="/static/styles/custom.css">
+    <script src="/static/styles/jquery-3.6.0.js"></script>
+    <script src="/static/styles/typewriter.js" type='text/javascript'></script>
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <meta name = "description" content = "Portfolio Showing my work in HTML, CSS, Js and Python"/>
     <link rel="icon" href="/static/images/favicon.jpg" type="image/jpg">
-    <script type="text/javascript" src="/static/styles/enter.js"> </script>
+    <script type="text/javascript" src="/static/styles/enter.js"></script>
     <script type="text/javascript" src='/static/styles/onclick.js'></script>
 </head>
 <body style="background-color:black;">>
@@ -50,12 +53,12 @@ C:\Users\5ifty\This_Website\ &#160;<div class='blinking-cursor'>|</div>
 
   <div class='easydiv' id='newpost'>
 
-  <button value='IC3' onclick="unhide()" class='invisiblebutton'>-About Me</button>
+  <button id='aboutbutton' value='IC3' onclick="unhide(); typewrite();" class='invisiblebutton'>-About Me</button>
   <div class="hidden typewriter">
     <span>
 
 
-    <p class="terminaltext typewriter-text">I'm a 19 year old Developer from the UK, specializing in HTML, CSS and JS frontends and Python Altered Back-Ends for Data Management.</p>
+    <p id='typeabout' class="terminaltext">I'm a 19 year old Developer from the UK, specializing in HTML, CSS and JS frontends and Python Altered Back-Ends for Data Management.</p>
   </div>
 </span>
 

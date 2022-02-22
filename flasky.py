@@ -21,8 +21,8 @@ def page_not_found(e):
 
 class Flasky(FlaskView):
     def __init__(self):
-        self.version = 'v1.0.2'
-        self.latest_update = '10/02/22'
+        self.version = 'v1.0.5'
+        self.latest_update = '22/02/22'
 
 
 

@@ -52,7 +52,7 @@ class Flasky(FlaskView):
 
     @route('/business')
     def business_page(self):
-        return('This page is under construction at the moment, for more info please email me')
+        return render_template('business.html')
 
 
 

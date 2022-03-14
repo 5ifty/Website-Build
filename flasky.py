@@ -54,6 +54,9 @@ class Flasky(FlaskView):
     def business_page(self):
         return render_template('business.html')
 
+    @route('/pass')
+    def prodbusiness(self):
+        return render_template('pass.html')
 
 
 Flasky.register(app,route_base = '/')

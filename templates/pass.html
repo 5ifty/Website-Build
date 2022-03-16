@@ -7,6 +7,12 @@
   <link rel="stylesheet"  type="text/css" href="/static/styles/business.css">
   <link rel="subresource" href="/static/styles/business.css">
   <link rel="prefetch" href="/static/styles/business.css">
+  <link rel="stylesheet" type="text/css" href="/static/styles/styles.css"
+</head>
+
+{% assets "scss_all" %}
+    <script type="text/scss" src="{{ ASSET_URL }}"></script>
+{% endassets %}
 
 <body>
   <div id="main" class="container">
@@ -18,6 +24,21 @@
     <span>O</span>
     <span>M</span>
     <span>E</span>
+</div>
+</div>
+<div id='second' class="container">
+  <div class="card" id='tileholder'>
+    <div class="face face1">
+      <h class='python'>About me</h>
+      <p class='python'>I am a 19 year old developer from the UK, currently working towards an apprenticeship at BetterBoards Ltd.
+        <br>
+        I mainly focus on backend logic using python, ususally handling data, but often try trying to improve my front end development abilities.
+      </p>
+
+    <div class="face face2">
+      <h2>:)</h2>
+
+</div>
 </div>
 </div>
 </body>
@@ -42,5 +63,4 @@
 
 
 
-</head>
 </html>

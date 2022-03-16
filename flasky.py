@@ -2,6 +2,7 @@ from flask import Flask, render_template, Markup, request, url_for, redirect, re
 import sys
 from flask_classful import FlaskView, route
 from flask.logging import default_handler
+from flask_assets import Environment, Bundle
 import os
 import pretty_errors
 from werkzeug.exceptions import HTTPException, NotFound
@@ -11,6 +12,9 @@ from werkzeug.exceptions import HTTPException, NotFound
 sys.path.append('/')
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
+assets = Environment(app)
+cssbundle = Bundle('styles/styles.scss', filters='pyscss', output='styles/styles.css')
+assets.register('scss_all', cssbundle)
 
 
 def page_not_found(e):

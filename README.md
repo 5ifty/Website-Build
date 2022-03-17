@@ -1,7 +1,6 @@
 # WebsiteBuild
 For me to gitpush and clone files for my project website. 
-
-This is made for testing and not for a production release. This repo will not feature stable releases. 
+This repo is not made for testing and is kept for production builds. This repo will feature stable releases. 
 
 Please See Requirements.txt for the dependancies.
 

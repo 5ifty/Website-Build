@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="description" content="A more formal business site">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet"  type="text/css" href="/static/styles/business.css">
-  <link rel="subresource" href="/static/styles/business.css">
-  <link rel="prefetch" href="/static/styles/business.css">
-  <link rel="stylesheet" type="text/css" href="/static/styles/styles.css"
+  <link rel="stylesheet"  type="text/css" href="/static/styles/CSS/business.css">
+  <link rel="subresource" href="/static/styles/CSS/business.css">
+  <link rel="prefetch" href="/static/styles/CSS/business.css">
+  <link rel="stylesheet" type="text/css" href="/static/styles/CSS/styles.css"
 </head>
 
 {% assets "scss_all" %}
@@ -24,12 +24,18 @@
     <span>O</span>
     <span>M</span>
     <span>E</span>
+
+
+    <a href="#second">Button</a>
+
 </div>
 </div>
-<div id='second' class="container">
+
+<div id='second' class="container2">
+  <div class="blurred"></div>
   <div class="card" id='tileholder'>
     <div class="face face1">
-      <h class='python'>About me</h>
+      <h1 class='python'>About me</h1>
       <p class='python'>I am a 19 year old developer from the UK, currently working towards an apprenticeship at BetterBoards Ltd.
         <br>
         I mainly focus on backend logic using python, ususally handling data, but often try trying to improve my front end development abilities.

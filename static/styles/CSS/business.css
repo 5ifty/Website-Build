@@ -14,6 +14,10 @@ html {
   position: relative;
   height: 100vh;
 }
+.container2 {
+  position: relative;
+  height: 60vh;
+}
 
 .fallingtext{
   width: 90%;
@@ -27,10 +31,10 @@ html {
 
 .fallingtext span{
   display:inline-block;
-  font-size: 9vw;
+  font-size: 7vw;
   font-weight: bold;
   color: #ffffff;
-  letter-spacing: 5vw;
+  letter-spacing: 4vw;
   text-shadow: 0 15px 25px rgba(0,0,0,0.2);
   position:  relative;
   transform: translateY(-100vh);
@@ -72,7 +76,9 @@ html {
   opacity: 0.5;
 }
 
-
+.button {
+  
+}
 
 .tile {
 position : relative;
@@ -83,7 +89,7 @@ background : #000;
 border-radius : 15px;
 box-shadow : 0 15px 60px rgb(0, 0, 0, 0.5);
 }
-.faces {
+.face {
 position : absolute;
 bottom : 0;
 left : 0;

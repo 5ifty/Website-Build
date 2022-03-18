@@ -13,7 +13,7 @@ sys.path.append('/')
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 assets = Environment(app)
-cssbundle = Bundle('styles/styles.scss', filters='pyscss', output='styles/styles.css')
+cssbundle = Bundle('styles/SCSS/styles.scss', filters='pyscss', output='styles/CSS/styles.css')
 assets.register('scss_all', cssbundle)
 
 
@@ -26,7 +26,7 @@ def page_not_found(e):
 class Flasky(FlaskView):
     def __init__(self):
         self.version = 'v1.0.5'
-        self.latest_update = '22/02/22'
+        self.latest_update = '18/03/22'
 
 
 

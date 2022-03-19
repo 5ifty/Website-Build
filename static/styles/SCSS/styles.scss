@@ -1,6 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("/static/styles/fonts/Righteous.ttf");
 
+  .body{
+    font-family: "Righteous";
+    font-size: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
 
+  .container3 {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 35px;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
 
   .card {
       position: relative;
@@ -34,18 +52,21 @@
             background-color: #fffc00;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            font-family: "Righteous";
           }
 
           .python {
             background-color: #00fffc;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            font-family: "Righteous";
           }
 
           .cSharp {
             background-color: #fc00ff;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            font-family: "Righteous";
           }
         }
 
@@ -70,6 +91,7 @@
 
       h2 {
         font-size: 2em;
+        font-family: Righteous;
       }
     }
 

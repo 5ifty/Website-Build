@@ -1,0 +1,160 @@
+html {
+    background: url('/static/images/businessbackground.jpg') no-repeat center fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  height: 100vh;
+}
+.container2 {
+  position: relative;
+  height: 60vh;
+}
+
+.fallingtext{
+  width: 90%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+
+}
+
+.fallingtext span{
+  display:inline-block;
+  font-size: 7vw;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 4vw;
+  text-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  position:  relative;
+  transform: translateY(-100vh);
+  animation: fall 3.5s forwards;
+}
+
+
+@keyframes fall{
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.fallingtext span:nth-child(2){
+  animation-delay: 0.5s;
+}
+
+.fallingtext span:nth-child(3){
+  animation-delay: 1.0s;
+}
+
+.fallingtext span:nth-child(4){
+  animation-delay: 1.5s;
+}
+
+.fallingtext span:nth-child(5){
+  animation-delay: 2.0s;
+}
+
+.fallingtext span:nth-child(6){
+  animation-delay: 2.5s;
+}
+
+.fallingtext span:nth-child(7){
+  animation-delay: 3.0s;
+}
+
+.blurred{
+  opacity: 0.5;
+}
+
+.button {
+
+}
+
+.tile {
+position : relative;
+width : 300px;
+height : 400px;
+margin : 0 auto;
+background : #000;
+border-radius : 15px;
+box-shadow : 0 15px 60px rgb(0, 0, 0, 0.5);
+}
+.face {
+position : absolute;
+bottom : 0;
+left : 0;
+width : 100%;
+height : 100%;
+display : flex;
+justify-content : center;
+align-items : center;
+}
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}

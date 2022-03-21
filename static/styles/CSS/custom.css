@@ -1,10 +1,10 @@
 @font-face{
     font-family: 'Consolas';
-    src:url("Consolas.ttf") format('embedded-opentype'), /* Internet Explorer */
-    url('Consolas.ttf') format('woff2'), /* Super Modern Browsers */
-    url('Consolas.ttf') format('woff'), /* Pretty Modern Browsers */
-    url('Consolas.ttf')  format('truetype'), /* Safari, Android, iOS */
-    url('Consolas.ttf') format('svg'); /* Legacy iOS */
+    src:url("/static/styles/fonts/Consolas.ttf") format('embedded-opentype'), /* Internet Explorer */
+    url('/static/styles/fonts/Consolas.ttf') format('woff2'), /* Super Modern Browsers */
+    url('/static/styles/fonts/Consolas.ttf') format('woff'), /* Pretty Modern Browsers */
+    url('/static/styles/fonts/Consolas.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('/static/styles/fonts/Consolas.ttf') format('svg'); /* Legacy iOS */
 }
 
 

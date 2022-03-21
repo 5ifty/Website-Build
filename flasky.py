@@ -2,6 +2,7 @@ from flask import Flask, render_template, Markup, request, url_for, redirect, re
 import sys
 from flask_classful import FlaskView, route
 from flask.logging import default_handler
+from flask_assets import Environment, Bundle
 import os
 import pretty_errors
 from werkzeug.exceptions import HTTPException, NotFound
@@ -11,6 +12,9 @@ from werkzeug.exceptions import HTTPException, NotFound
 sys.path.append('/')
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
+assets = Environment(app)
+cssbundle = Bundle('styles/SCSS/styles.scss', filters='pyscss', output='styles/CSS/styles.css')
+assets.register('scss_all', cssbundle)
 
 
 def page_not_found(e):
@@ -22,7 +26,7 @@ def page_not_found(e):
 class Flasky(FlaskView):
     def __init__(self):
         self.version = 'v1.0.5'
-        self.latest_update = '22/02/22'
+        self.latest_update = '18/03/22'
 
 
 
@@ -54,6 +58,9 @@ class Flasky(FlaskView):
     def business_page(self):
         return render_template('business.html')
 
+    @route('/pass')
+    def prodbusiness(self):
+        return render_template('pass.html')
 
 
 Flasky.register(app,route_base = '/')

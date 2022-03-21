@@ -19,6 +19,12 @@ html {
   height: 60vh;
 }
 
+.container4 {
+    height: 30vh;
+    position: relative;
+}
+
+
 .fallingtext{
   width: 90%;
   position: absolute;
@@ -76,8 +82,9 @@ html {
   opacity: 0.5;
 }
 
-.button {
-
+.centered {
+  display: block;
+  text-align:center;
 }
 
 .tile {
@@ -157,4 +164,10 @@ align-items : center;
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
   }
+}
+
+footer{
+  padding: 3vh;
+  background-color: Black;
+  color: white;
 }

@@ -24,6 +24,12 @@ html {
     position: relative;
 }
 
+.subtitle {
+  opacity: 0.5;
+  text-align: center;
+  color: grey;
+  font-size: 1vw;
+}
 
 .fallingtext{
   width: 90%;

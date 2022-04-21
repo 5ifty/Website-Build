@@ -21,23 +21,15 @@ def page_not_found(e):
     return render_template('404.html'), 404     # error handler
 
 
-
-
 class Flasky(FlaskView):
     def __init__(self):
         self.version = 'v1.0.5'
-        self.latest_update = '18/03/22'
-
-
-
-
+        self.latest_update = '25/03/22'
+                                                                                                                                                                                
     @route('/')
     def index(self):
         varaboutsite = f'Version {self.version} Latest Update {self.latest_update}'
         return render_template('index.html', aboutsite=varaboutsite)
-
-
-
 
     @route('/', methods=['POST'])
     def index_post(self):
@@ -52,7 +44,6 @@ class Flasky(FlaskView):
             return render_template('index.html',)
 
         return render_template('index.html',)
-
 
     @route('/business')
     def business_page(self):
